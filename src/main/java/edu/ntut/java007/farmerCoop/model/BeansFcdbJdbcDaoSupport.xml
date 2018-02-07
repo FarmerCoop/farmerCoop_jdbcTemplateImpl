@@ -33,8 +33,7 @@
 		<property name="initialSize" value="5" />
 		<property name="maxActive" value="10" />
 	</bean>
-
-	<bean id="SuserJdbcDaoSupport" class="edu.ntut.java007.farmerCoop.model.SuserDao">
+	<bean id="SuserJdbcDaoSupport" class="edu.ntut.java007.farmerCoop.model.SuserDaoImpl">
 		<!-- 一定要寫下列敘述，但不必準備Setter -->
 		<property name="dataSource" ref="dataSourceC3P0" />
 	</bean>
